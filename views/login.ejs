@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <style>
+        form{
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 6px;
+            border: 1px soldi #ccc;
+            background-color: #ccc;
+        }
+        form input{
+            display: block;
+            padding: 5px 2px;
+            width: 80%;
+            margin: 5px auto;
+        }
+        form button{
+            display: block;
+            max-width: 20%;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+   <h1>This is the Login page</h1>
+   <form class="form-group" action="/login" method="post">
+            <input class="form-control" type="email" placeholder="email" name="email" id="email">
+            <input class="form-control" type="password" placeholder="password" name="password" id="password">
+            <button style="display:block; max-width:20%; margin:0 auto;" class="btn btn-success" type="submit">Login</button>
+    </form>
+</body>
+</html>
